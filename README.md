@@ -40,3 +40,8 @@ Para evaluar el funcionamiento de su código, deberá realizar lo siguiente en e
 1) Crear una instancia de Linked List y agregar 10 elementos en ella.
 2) Imprimir la lista original.
 3) Utilizar el método **Reverse Inplace** para invertir la lista original.
+
+## Results
+
+![Console Results](https://github.com/jricica/Reverse-II-Jan/blob/main/img/reverse.png)
+
