@@ -53,7 +53,8 @@ class LinkedList:
             nodes.append(node.data)
 
         nodes.append("NIL")
-        return " --> ".join(nodes)
+        return ' -> '.join(nodes)
+    
     
 
     def __len__(self):
@@ -198,3 +199,21 @@ class LinkedList:
             previous_node = current_node
 
         print('Reference node {} not found in linked list...'.format(reference_node))
+
+    def reverse(self):
+
+        if self.start == None: 
+            return "Empty list..."
+    
+        current_node = self.start
+        previous_node = None
+        next_node = None
+    
+        while current_node != None:
+            next_node = current_node.next
+            current_node.next = previous_node
+            previous_node = current_node
+            current_node = next_node
+        
+        self.start = previous_node
+    

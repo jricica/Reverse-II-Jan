@@ -1,25 +1,26 @@
 '''
-Midterm 1 - Solved
+Test  of reverse method for LL. 
 '''
-from linked_list import LinkedList, Node
+from linked_list import Node, LinkedList
 from reverse import reverse_with_stack
 
+node_a = Node("A")
+node_b = Node("B")
+node_c = Node("C")
+node_d = Node("D")
 
-# Create original list
-original_list = LinkedList()
-size_multiplier = 1
-elements = ['1', '33', '14', '16', '4'] * size_multiplier
 
-for element in elements:
-    _node = Node(element)
-    original_list.insert_at_end(_node)
+ll = LinkedList()
+print(ll)
 
-print('Original List: ', original_list)
+#add nodes to ll
+ll.insert_at_end(node_a)
+ll.insert_at_end(node_b)
+ll.insert_at_end(node_c)
+ll.insert_at_end(node_d)
+print(ll)
 
-# Reverse with stack
-reversed_list = reverse_with_stack(original_list)
-print('Reversed with stack:', reversed_list)
+#test reverse method
+ll.reverse()
+print(ll)
 
-# Reverse in place
-original_list.reverse()
-print('Original list reversed: ', original_list)
